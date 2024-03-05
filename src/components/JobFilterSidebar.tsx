@@ -40,7 +40,7 @@ const JobFilterSidebar = async ({ defaultValues }: JobFilterSidebarProps) => {
 
   return (
     <aside className="sticky top-4 h-fit rounded-lg border bg-background md:w-[260px]">
-      <form action={filterJobs}>
+      <form action={filterJobs} key={JSON.stringify(defaultValues)}>
         <div className="space-y-4 p-4">
           <div className="flex flex-col gap-2">
             <Label>Search</Label>
